@@ -21,6 +21,13 @@ def sort_names(names):
 
 # Ayan - Task 8: remove_duplicates
 
+def remove_duplicates(names):
+    new_names = []
+    for name in names:
+        if name not in new_names:
+            new_names.append(name)
+    return new_names
+
 
 # ===== Each student adds her function ABOVE this line =====
 
@@ -33,5 +40,6 @@ def main():
 
     # Other students will add their function calls here
     print("Names in alphabetical order:", sort_names(names))
+    print("Names without duplicates:", remove_duplicates(names))
 
 main()
